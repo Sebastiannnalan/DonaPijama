@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doña Pijama | Comodidad & Estilo para tus Sueños</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Doña Pijama<span>.</span></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#coleccion">Colección</a></li>
+                <li><a href="#ordenar">Comprar</a></li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal / Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="badge">NUEVA COLECCIÓN</span>
+            <h1>El arte de descansar con elegancia y confort</h1>
+            <p>Descubre nuestra exclusiva línea de pijamas para toda la familia. Diseños suaves, frescos y pensados para brindarte las mejores noches de sueño.</p>
+            <div class="hero-buttons">
+                <a href="#coleccion" class="btn btn-primary">Ver Catálogo</a>
+                <a href="#ordenar" class="btn btn-secondary">Hacer Pedido Online</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos / Colección -->
+    <section id="coleccion" class="products">
+        <div class="section-title">
+            <h2>Nuestras Categorías</h2>
+            <p>Haz clic en cualquier categoría para ver todas las fotos e imágenes disponibles</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Categoría 1: Short y Blusa -->
+            <a href="short-blusa.html" target="_blank" class="product-card-link">
+                <div class="product-card">
+                    <div class="product-tag">Más Vendido</div>
+                    <div class="product-img img-dama"></div>
+                    <div class="product-info">
+                        <h3>Short y blusa</h3>
+                        <p>Acabados delicados y alta costura. Explora todos nuestros modelos.</p>
+                        <span class="card-btn">Ver Galería de Fotos &rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Categoría 2: Bata y Tanga -->
+            <a href="bata-tanga.html" target="_blank" class="product-card-link">
+                <div class="product-card">
+                    <div class="product-img img-caballero"></div>
+                    <div class="product-info">
+                        <h3>Bata y tanga</h3>
+                        <p>Con un poco de pasión y ultra cómodos para un descanso total.</p>
+                        <span class="card-btn">Ver Galería de Fotos &rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Categoría 3: Blusa y Pantalón -->
+            <a href="blusa-pantalon.html" target="_blank" class="product-card-link">
+                <div class="product-card">
+                    <div class="product-tag">Destacado</div>
+                    <div class="product-img img-ninos"></div>
+                    <div class="product-info">
+                        <h3>Blusa y Pantalón</h3>
+                        <p>Estampados divertidos, telas suaves e hipoalergénicas.</p>
+                        <span class="card-btn">Ver Galería de Fotos &rarr;</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección Formulario de Compra Directo a WhatsApp -->
+    <section id="ordenar" class="order-section">
+        <div class="order-container">
+            <div class="order-header">
+                <h2>Realiza tu Pedido</h2>
+                <p>Completa tus datos y envía tu orden directamente a nuestro WhatsApp para coordinar el despacho.</p>
+            </div>
+
+            <form action="https://wa.me/573248255625" method="GET" target="_blank" class="order-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="text" required placeholder="Ej. María Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección de Entrega y Ciudad *</label>
+                    <input type="text" id="direccion" placeholder="Ej. Calle 10 # 4-20, Pitalito" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="whatsapp">Número de WhatsApp *</label>
+                    <input type="tel" id="whatsapp" placeholder="Ej. 3101234567" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pijama">Pijama que deseas llevar *</label>
+                    <input type="text" id="pijama" placeholder="Ej. Pijama Dama Satinada Talla M" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Método de Pago *</label>
+                    <div class="payment-options">
+                        <label class="radio-card">
+                            <input type="radio" name="pago" value="Pago Online (Nequi / Daviplata / Transferencia)" checked>
+                            <span class="radio-label">
+                                <strong>A través de</strong>
+                                <small>Nequi, Daviplata o Transferencia</small>
+                            </span>
+                        </label>
+
+                        <label class="radio-card">
+                            <input type="radio" name="pago" value="Pago Contraentrega">
+                            <span class="radio-label">
+                                <strong>Pago Contra Entrega</strong>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="notice-box">
+                    <p>💡 <strong>Nota sobre Contraentrega:</strong> Se sumará un recargo de <strong>$20.000 COP</strong> por costo de envío asegurado a cualquier municipio del país.</p>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    🛒 Enviar Pedido por WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección Inspiracional -->
+    <section id="nosotros" class="banner-inspiration">
+        <div class="banner-content">
+            <h2>Un buen día comienza con una gran noche de descanso</h2>
+            <p>En Doña Pijama seleccionamos minuciosamente las mejores texturas para cuidar tu piel y transformar tus horas de sueño en una experiencia de puro bienestar.</p>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer id="contacto" class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Doña Pijama<span>.</span></h3>
+                <p>Tu tienda de confianza para el descanso perfecto.</p>
+            </div>
+
+            <div class="footer-quote">
+                <p class="quote-text">"Regálate la pausa que mereces. Vestir bien para descansar no es un lujo, es la forma en que recargas tu energía para conquistar cada nuevo amanecer."</p>
+                <a href="#ordenar" class="btn-footer">Renueva tu Descanso Hoy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Doña Pijama. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/573248255625?text=Hola!%20Me%20gustaría%20recibir%20atención%20personalizada%20de%20Doña%20Pijama." class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 8.138-2.135c2.383 1.305 5.083 1.992 7.862 1.992 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.35c-2.45 0-4.85-0.655-6.95-1.902l-0.498-0.297-5.175 1.357 1.383-5.043-0.327-0.518c-1.37-2.173-2.093-4.702-2.093-7.297 0-7.525 6.125-13.65 13.65-13.65s13.65 6.125 13.65 13.65-6.125 13.65-13.65 13.65zM22.887 18.943c-0.378-0.188-2.232-1.102-2.578-1.228s-0.598-0.188-0.85 0.188c-0.252 0.378-0.977 1.228-1.198 1.48s-0.442 0.283-0.82 0.095c-0.378-0.188-1.597-0.588-3.042-1.877-1.125-1.003-1.885-2.242-2.107-2.62s-0.023-0.582 0.165-0.77c0.17-0.17 0.378-0.442 0.567-0.662s0.252-0.378 0.378-0.63c0.125-0.252 0.063-0.472-0.032-0.662s-0.85-2.048-1.167-2.805c-0.308-0.738-0.622-0.638-0.85-0.65-0.22-0.012-0.472-0.012-0.723-0.012s-0.662 0.095-1.008 0.472c-0.347 0.378-1.322 1.292-1.322 3.152s1.353 3.655 1.542 3.907c0.188 0.252 2.663 4.067 6.452 5.702 0.902 0.39 1.607 0.623 2.155 0.797 0.907 0.288 1.732 0.247 2.385 0.15 0.728-0.108 2.232-0.912 2.547-1.792s0.315-1.632 0.22-1.792c-0.095-0.158-0.347-0.252-0.725-0.442z"></path>
+        </svg>
+    </a>
+
+</body>
+</html>
