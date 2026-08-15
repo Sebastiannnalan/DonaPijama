@@ -251,15 +251,15 @@ body {
 }
 
 .img-dama {
-    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    background-image: url('Blusa-short-1.jpeg');
 }
 
 .img-caballero {
-    background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+    background-image: url('Bata\ y\ tanga.jpeg');
 }
 
 .img-ninos {
-    background: linear-gradient(135deg, #fff9c4, #ffe082);
+    background-image: url('Blusa-pantalon-2.jfif');
 }
 
 .product-info {
